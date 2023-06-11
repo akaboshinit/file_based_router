@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "example:app",
+            "request": "launch",
+            "type": "dart",
+            "program": "example/lib/main.dart",
+            "flutterMode": "debug",
+        },
+        {
+            "name": "example:build_runner:build",
+            "request": "launch",
+            "program": "example/.dart_tool/build/entrypoint/build.dart",
+            "type": "dart",
+            "args": [
+                "build",
+                "--delete-conflicting-outputs"
+            ]
+        },
+        {
+            "name": "example:build_runner:watch",
+            "request": "launch",
+            "program": "example/.dart_tool/build/entrypoint/build.dart",
+            "type": "dart",
+            "args": [
+                "watch",
+            ]
+        },
+        {
+            "name": "example:build_runner:watch:--delete-conflicting-outputs",
+            "request": "launch",
+            "program": "example/.dart_tool/build/entrypoint/build.dart",
+            "type": "dart",
+            "args": [
+                "watch",
+                "--delete-conflicting-outputs"
+            ]
+        }
+    ]
+}
