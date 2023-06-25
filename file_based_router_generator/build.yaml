@@ -3,21 +3,12 @@ targets:
     builders:
       file_based_router_generator:
         enabled: true
-      file_builder:
-        enabled: true
 
 builders:
   file_based_router_generator:
     import: 'package:file_based_router_generator/builder.dart'
     builder_factories: ['fileRouterBuilder']
     build_extensions: {'.dart': ['.fr.g.dart']}
-    auto_apply: dependents
-    build_to: source
-    applies_builders: ['source_gen|combining_builder']
-  file_builder:
-    import: 'package:file_based_router_generator/builder.dart'
-    builder_factories: ['fileBuilder']
-    build_extensions: {'.dart': ['.route.g.dart']}
     auto_apply: dependents
     build_to: source
     applies_builders: ['source_gen|combining_builder']

@@ -1,7 +1,7 @@
 import 'package:file_based_router_annotations/file_based_router_annotations.dart';
 import 'package:flutter/material.dart';
 
-@fileRouter
+@fileRoute
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Hello World!'),
+        child: Text('HomePage Hello World!'),
       ),
     );
   }

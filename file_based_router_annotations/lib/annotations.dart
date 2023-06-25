@@ -1,12 +1,11 @@
-class FileRouter {
-  const FileRouter();
+class FileRoute {
+  const FileRoute();
 }
 
-const fileRouter = FileRouter();
+const fileRoute = FileRoute();
 
-class RouteGenerator {
-  const RouteGenerator();
+class FileAppRouter {
+  const FileAppRouter();
 }
 
-const routeGenerator = RouteGenerator();
-
+const fileAppRouter = FileAppRouter();

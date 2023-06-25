@@ -1,6 +1,10 @@
-import 'package:example/pages/_home/home.dart';
 import 'package:file_based_router_annotations/annotations.dart';
 import 'package:flutter/material.dart';
+
+import 'app.route.g.dart';
+
+@fileAppRouter
+final _routes = routes;
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -12,10 +16,3 @@ class App extends StatelessWidget {
     );
   }
 }
-
-final _routes = <String, WidgetBuilder>{
-  '/': (context) => const HomePage(),
-};
-
-@routeGenerator
-final route = _routes['/'];
